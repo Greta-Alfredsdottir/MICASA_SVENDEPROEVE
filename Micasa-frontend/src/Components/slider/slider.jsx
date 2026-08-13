@@ -2,6 +2,7 @@ import { useState } from 'react';
 import sliderImage1 from '../../assets/sliderImages/apartment-1.jpg'
 import sliderImage2 from '../../assets/sliderImages/apartment-2.jpg'
 import sliderImage3 from '../../assets/sliderImages/apartment-3.jpg'
+import style from './slider.module.scss'
 
 export function Slider(){
     const [sliderIndex, setSliderIndex] = useState(0);
@@ -22,12 +23,12 @@ export function Slider(){
     }
 
     return(
-        <figure>
+        <figure className={style.sliderStyle}>
             <img src={sliderImages[sliderIndex]} />
-            <figurecaption>
+            <figcaption>
             <button onClick={() => back()}>Previous</button>
             <button onClick={() => forward()}>Next</button>
-            </figurecaption>
+            </figcaption>
         </figure>
     )
 }

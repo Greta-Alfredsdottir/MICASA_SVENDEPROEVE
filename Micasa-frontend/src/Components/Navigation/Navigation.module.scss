@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: globals.$Raisin-black;
+    
     figure{
         img{
            width: 10vw; 
@@ -15,7 +16,7 @@
         display: flex;
         gap: 14px;
         justify-content: end;
-        margin: 32x;
+        margin: 32px;
         li{
             a{
                 text-decoration: none;
