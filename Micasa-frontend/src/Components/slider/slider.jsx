@@ -11,7 +11,7 @@ export function Slider(){
     const sliderImages =[sliderImage1,sliderImage2,sliderImage3];
     
     function forward(){
-        if (sliderIndex >= sliderImages, length){
+        if (sliderIndex >= sliderImages.length -1){
             setSliderIndex(0)
         }   else setSliderIndex(prev => prev + 1)
     }

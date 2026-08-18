@@ -23,6 +23,7 @@ function App() {
         <Route path="/Login" element={<Loginpage />} />
         <Route path="/Search" element={<SearchResultspage />} />
         <Route path="/Contact" element={<Contactpage />} />
+        <Route path="*" element={<h1> 404 Page not found</h1>} />
       </Route>
      </Routes>
     </BrowserRouter>
